@@ -4,6 +4,7 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
 body,
@@ -63,6 +64,20 @@ p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
+}
+
+.overline {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1ch;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 
 button {
@@ -155,5 +170,72 @@ button {
 .text-field:focus {
   border: 2px solid #fbaf85;
   outline: none !important;
+}
+
+nav {
+  background-color: #141414;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 1em;
+}
+
+.line {
+  height: 1px;
+  background-color: gray;
+}
+
+.highlight-container {
+  position: relative;
+  background-color: #141414;
+}
+
+.highlight-container img {
+  height: 600px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.highlight-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.highlight-text-container h2 {
+  color: white;
+  text-align: center;
+}
+
+.highlight-text-container p {
+  color: #fafafa;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.highlight-text-container .overline {
+  color: grey;
 }
 /*# sourceMappingURL=main.css.map */
